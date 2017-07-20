@@ -49,3 +49,15 @@ Gongfucha does accept pull requests. Please include clear comments in both your 
 * [Nicky](https://github.com/NeversSync)
 * [Yuval](https://github.com/themarquisdesheric)
 * [Keeley](https://github.com/VerteDinde)
+
+
+ - Header / Nav
+ - Map
+ - List of Stores
+ - Submit Form
+ - Footer
+ - View?
+  - Main / About
+  - Online Tea Retailers
+  - User Account Page
+  - Media / Blog Tab
