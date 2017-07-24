@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'; 
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import rootReducer from './reducers.js';
+import rootReducer from './reducers/reducers.js';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { composeWithDevTools } from 'redux-devtools-extension';
@@ -11,7 +11,24 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 const store = createStore(
   rootReducer,
   {
-    locations: [],
+    locations: [ 
+      {
+        name: 'tea shop',
+        address: 'cool place',
+        rating: '5 star'
+      },
+      {
+        name: 'tea shop2',
+        address: 'cool place',
+        rating: '5 star'
+      },
+      {
+        name: 'tea shop3',
+        address: 'cool place',
+        rating: '5 star'
+      }
+    ],
+    filteredLocations: [],
     locationTypes: [],
     user: false,
     formSubmit: false

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import headerImage from '../img/gongfu-setup.jpg';
 import Nav from './Nav';
+import List from './List';
 
 const Wrapper = styled.section`
   padding: 4em;
@@ -23,6 +24,7 @@ class Main extends Component {
         <div>
           <h1>Gongfutea</h1>
           <Nav />
+          <List />
         </div>
       </HeaderImage>
     );
