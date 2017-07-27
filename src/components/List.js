@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 function List ({ locations }) {
-  console.log(locations);
   return (
     <ul>
       {locations.map((location, i) => {
@@ -12,7 +11,5 @@ function List ({ locations }) {
     </ul>
   );
 }
-
-// TODO: finish mapping the tea locations
 
 export default List;
