@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 
 function List ({ locations }) {
+  console.log(locations);
   return (
     <ul>
       {locations.map((location, i) => {
-        <li>{location.name}{location.address}{location.rating}</li>;
+        return <li>{location.name}{location.address}{location.rating}</li>;
       })
       }
     </ul>
@@ -16,6 +15,4 @@ function List ({ locations }) {
 
 // TODO: finish mapping the tea locations
 
-export default withRouter(connect(
-  state => ({ locations: state.locations }),
-  (List)));
+export default List;

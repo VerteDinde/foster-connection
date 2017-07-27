@@ -4,11 +4,6 @@ import headerImage from '../img/gongfu-setup.jpg';
 import Nav from './Nav';
 import List from './List';
 
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
-
 const HeaderImage = styled.div`
   height: 100vh;
   width: 100vw;
@@ -19,12 +14,14 @@ const HeaderImage = styled.div`
 
 class Main extends Component {
   render() {
+    const { locations } = this.props;
+    
     return (
       <HeaderImage>
         <div>
           <h1>Gongfutea</h1>
           <Nav />
-          <List />
+          <List locations={locations}/>
         </div>
       </HeaderImage>
     );
