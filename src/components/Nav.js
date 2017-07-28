@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { slide as Menu } from 'react-burger-menu';
+import { push as Menu } from 'react-burger-menu';
 import styled from 'styled-components';
 import '../Styles/main.css';
 

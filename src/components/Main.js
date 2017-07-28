@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { H1 } from '../Styles/utils';
 import headerImage from '../img/gongfu-setup.jpg';
-import Nav from './Nav';
 import List from './List';
 
 const HeaderImage = styled.div`
@@ -20,7 +19,6 @@ class Main extends Component {
     return (
       <HeaderImage>
         <div>
-          <Nav user={user}/>
           <H1>Gong Fu Tea</H1>
           <List locations={locations}/>
         </div>
