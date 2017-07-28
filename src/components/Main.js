@@ -15,13 +15,13 @@ const HeaderImage = styled.div`
 
 class Main extends Component {
   render() {
-    const { locations } = this.props;
+    const { user, locations } = this.props;
     
     return (
       <HeaderImage>
         <div>
+          <Nav user={user}/>
           <H1>Gong Fu Tea</H1>
-          <Nav />
           <List locations={locations}/>
         </div>
       </HeaderImage>

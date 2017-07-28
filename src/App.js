@@ -32,10 +32,10 @@ class App extends Component {
   }
 
   render() {
-    const { locations } = this.state;
+    const { user,locations } = this.state;
     return (
       <div className="App">
-        <Main locations={locations}/>
+        <Main locations={locations} user={user}/>
       </div>
     );
   }
