@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Main from './components/Main';
+import Nav from './components/Nav';
 import styled from 'styled-components';
 
 class App extends Component {
@@ -32,10 +33,13 @@ class App extends Component {
   }
 
   render() {
-    const { user,locations } = this.state;
+    const { user, locations } = this.state;
     return (
       <div className="App">
-        <Main locations={locations} user={user}/>
+        <Nav user={user} />
+        <div id='page-wrap'>
+          <Main locations={locations} user={user} />
+        </div>
       </div>
     );
   }
