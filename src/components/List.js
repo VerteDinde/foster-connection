@@ -5,7 +5,7 @@ function List ({ locations }) {
   return (
     <ul>
       {locations.map((location, i) => {
-        return <li>{location.name}{location.address}{location.rating}</li>;
+        return <li>{location.name} {location.street} {location.city} {location.state} {location.rating}</li>;
       })
       }
     </ul>
