@@ -14,7 +14,7 @@ export class MapContainer extends Component {
     super();
 
     this.state = {
-      selectedPlace: 'something'
+      selectedPlace: 'something' //change this once state is meaningful
     };
   }
   render() {

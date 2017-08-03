@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { H1 } from '../Styles/utils';
-import backgroundImage from '../img/gongfu-setup.jpg';
+import backgroundImage from '../assets/img/gongfu-setup.jpg';
 import List from './List';
 import MapContainer from './Map';
 
