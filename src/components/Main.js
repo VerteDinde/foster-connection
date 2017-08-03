@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { H1 } from '../Styles/utils';
 import backgroundImage from '../img/gongfu-setup.jpg';
 import List from './List';
+import MapContainer from './Map';
 
 const BackgroundImage = styled.div`
   height: 80vh;
@@ -31,6 +32,7 @@ class Main extends Component {
           <p>Welcome to Gong Fu Tea: Taiwanese Oolongs Only</p>
         </HeaderContainer>
         <List locations={locations} />
+        <MapContainer/>
       </BackgroundImage>
     );
   }
