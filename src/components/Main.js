@@ -32,7 +32,7 @@ class Main extends Component {
           <p>Welcome to Gong Fu Tea: Taiwanese Oolongs Only</p>
         </HeaderContainer>
         <List locations={locations} />
-        <MapContainer/>
+        <MapContainer locations={locations}/>
       </BackgroundImage>
     );
   }

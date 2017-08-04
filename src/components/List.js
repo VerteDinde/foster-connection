@@ -5,8 +5,13 @@ function List ({ locations }) {
   return (
     <ul>
       {locations.map((location, i) => {
-        return <li>{location.name} {location.street} {location.city} {location.state} {location.rating}</li>;
-      })
+        return <li key={i}>
+          {location.name} 
+          {location.street} 
+          {location.city} 
+          {location.state} 
+          {location.rating}
+          </li>;})
       }
     </ul>
   );
