@@ -1,7 +1,8 @@
 # Gongfucha: Online Tea Shop Database
 
 ## Summary
-This is our second version of GongFuTea.org site, rebuilt in React and Node.
+* Work in progress
+This is our second version of GongFuTea.org site, rebuilt in React and Node. 
 
 ## Technical Stack
 * HTML/CSS
@@ -10,6 +11,7 @@ This is our second version of GongFuTea.org site, rebuilt in React and Node.
 * MongoDB
 * Heroku & HerokuDB (deployment and database)
 * Google Maps API -OR- Leaflet
+* Google Places API
 
 ## Features
 
