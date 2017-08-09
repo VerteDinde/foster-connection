@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { push as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import '../Styles/main.css';
 
@@ -26,14 +27,14 @@ class Nav extends Component {
     const { user } = this.props;
     return (
       <div id='outer-container'>
-        <Menu pageWrapId={ 'page-wrap'} outerContainerId={ 'outer-container'}>
-          <NavItem className='menu-item'>Home</NavItem>
-          <NavItem className='menu-item'>About</NavItem>
-          <NavItem className='menu-item'>Places</NavItem>
-          <NavItem className='menu-item'>Vendors</NavItem>
+        <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
+          <Link to ='/'><NavItem>Home</NavItem></Link>
+          <Link to ='/about'><NavItem>About</NavItem></Link>
+          <Link to ='/places'><NavItem>Places</NavItem></Link>
+          <Link to ='/vendors'><NavItem>Vendors</NavItem></Link>
           {user
-            ? <NavItem className='menu-item'>My Account</NavItem>
-            : <NavItem className='menu-item'>Log In</NavItem>
+            ? <Link to ='/login'><NavItem>My Account</NavItem></Link>
+            : <Link to ='/login'><NavItem>Log In</NavItem></Link>
           }
         </Menu>
       </div>

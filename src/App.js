@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from 'react-router-dom';
 import Main from './components/Main';
 import Nav from './components/Nav';
+import About from './components/Nav';
+import Login from './components/Nav';
+import Vendors from './components/Nav';
 import styled from 'styled-components';
 
 class App extends Component {
@@ -62,12 +71,21 @@ class App extends Component {
   render() {
     const { user, locations } = this.state;
     return (
-      <div className="App">
-        <Nav user={user} />
-        <div id='page-wrap'>
-          <Main locations={locations} user={user} />
+      <Router>
+        <div className="App">
+          <Nav user={user} />
+          <main id='page-wrap'>
+            <Switch>
+              <Route exact path='/' render={() => <Main locations={locations}/>} />
+              <Route path='/about' render={() => <About />} />
+              <Route path='/places' render={() => <Main locations={locations}/>} />
+              <Route path='/vendors' render={() => <Vendors user={user}/>} />
+              <Route path='/login' render={() => <Login user={user}/>} />
+              <Redirect to='/' />
+            </Switch>
+          </main>
         </div>
-      </div>
+      </Router>
     );
   }
 }
