@@ -4,6 +4,7 @@ import { H1 } from '../Styles/utils';
 import backgroundImage from '../assets/img/gongfu-setup.jpg';
 import List from './List';
 import MapContainer from './Map';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const BackgroundImage = styled.div`
   height: 80vh;
@@ -31,6 +32,7 @@ class Main extends Component {
           <H1>Gong Fu Tea <span>👍</span></H1>
           <p>Welcome to Gong Fu Tea: Taiwanese Oolongs Only</p>
         </HeaderContainer>
+        <RaisedButton label="A button" />
         <List locations={locations} />
         <MapContainer locations={locations}/>
       </BackgroundImage>
