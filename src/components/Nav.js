@@ -8,15 +8,16 @@ const NavItem = styled.li`
   font-size: 2em;
   display: block;
   text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: turquoise;
+  }
 
   @media (min-width: 700px) {
     display: inline-block;
   }
 `;
-
-const NavUl = styled.ul`
-  display: inline-block;
-  `;
 
 class Nav extends Component {
   showSettings(event) {

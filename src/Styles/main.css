@@ -1,6 +1,17 @@
 /* -------------
 react-burger-menu
 ---------------- */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand:300,400,500,700|Roboto:300,400,500');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* BURGER MENU STYLING  */
 
 /* Position and sizing of burger button */
 .bm-burger-button {

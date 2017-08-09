@@ -10,7 +10,6 @@ import Nav from './components/Nav';
 import About from './components/Nav';
 import Login from './components/Nav';
 import Vendors from './components/Nav';
-import styled from 'styled-components';
 
 class App extends Component {
   constructor() {

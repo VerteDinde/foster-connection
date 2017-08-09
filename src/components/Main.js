@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { H1 } from '../Styles/utils';
 import backgroundImage from '../assets/img/gongfu-setup.jpg';
 import List from './List';
 import MapContainer from './Map';
-import RaisedButton from 'material-ui/RaisedButton';
 
 const BackgroundImage = styled.div`
   height: 80vh;
@@ -20,6 +18,22 @@ const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
+`;
+
+const PlacesWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const Title = styled.h1`
+  font-weight: 400;
+  font-size: 5em;
+`;
+
+const SubHeader = styled.h2`
+  font-size: 2em;
+  font-weight: 400;
 `;
 
 class Main extends Component {
@@ -27,15 +41,18 @@ class Main extends Component {
     const { user, locations } = this.props;
 
     return (
-      <BackgroundImage>
-        <HeaderContainer>
-          <H1>Gong Fu Tea <span>👍</span></H1>
-          <p>Welcome to Gong Fu Tea: Taiwanese Oolongs Only</p>
-        </HeaderContainer>
-        <RaisedButton label="A button" />
-        <List locations={locations} />
-        <MapContainer locations={locations}/>
-      </BackgroundImage>
+      <div>
+        <BackgroundImage>
+          <HeaderContainer>
+            <Title>GONG FU TEA</Title>
+            <SubHeader>A site for tea lovers</SubHeader>
+          </HeaderContainer>
+          </BackgroundImage>
+          <PlacesWrapper>
+            <List locations={locations} />
+            <MapContainer locations={locations}/>
+          </PlacesWrapper>
+        </div>
     );
   }
 }
