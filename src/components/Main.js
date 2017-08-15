@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import backgroundImage from '../assets/img/gongfu-setup.jpg';
+import backgroundImage from '../assets/img/tetsu2.png';
 import List from './List';
 import MapContainer from './Map';
 
+const Wrapper = styled.div`
+  height: 1900px;
+`;
+
 const BackgroundImage = styled.div`
-  height: 80vh;
-  width: 100vw;
   background: url(${backgroundImage});
   background-size: cover;
   background-repeat: no-repeat;
 `;
 
 const HeaderContainer = styled.div`
-  height: 80vh;
+  height: 98vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,18 +43,18 @@ class Main extends Component {
     const { user, locations } = this.props;
 
     return (
-      <div>
+      <Wrapper>
         <BackgroundImage>
           <HeaderContainer>
             <Title>GONG FU TEA</Title>
             <SubHeader>A site for tea lovers</SubHeader>
           </HeaderContainer>
-          </BackgroundImage>
-          <PlacesWrapper>
+        </BackgroundImage>
+        <PlacesWrapper>
             <List locations={locations} />
             <MapContainer locations={locations}/>
-          </PlacesWrapper>
-        </div>
+        </PlacesWrapper>
+      </Wrapper>
     );
   }
 }

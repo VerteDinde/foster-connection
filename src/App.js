@@ -29,7 +29,7 @@ class App extends Component {
     const { user, locations } = this.state;
     return (
       <Router>
-        <div className="App">
+        <div>
           <Nav user={user} />
           <main id='page-wrap'>
             <Switch>
