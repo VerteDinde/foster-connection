@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import vendors from '../data/vendors';
+import avatarPhoto from '../assets/img/teacup.jpg';
 
 import { List, ListItem } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
@@ -31,12 +32,12 @@ const rightIconMenu = (
 class Vendors extends Component {
   render() {
     return (
-      <List style={{ width: '50%' }}>
+      <List style={{ width: '75%', marginLeft: '10%' }}>
         <Subheader>Vendor List</Subheader>
         {vendors.map(vendor => {
           return <div>
             <ListItem
-              leftAvatar={<Avatar src="images/ok-128.jpg" />}
+              leftAvatar={<Avatar src={avatarPhoto} />}
               rightIconButton={rightIconMenu}
               primaryText={vendor.name}
               secondaryText={
