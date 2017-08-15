@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import Main from './components/Main';
 import Nav from './components/Nav';
-import About from './components/Nav';
+import About from './components/About';
 import Login from './components/Nav';
 import Vendors from './components/Nav';
 
@@ -71,7 +71,7 @@ class App extends Component {
     const { user, locations } = this.state;
     return (
       <Router>
-        <div className="App">
+        <div>
           <Nav user={user} />
           <main id='page-wrap'>
             <Switch>

@@ -11,6 +11,13 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+a {
+  color: white;
+}
+a:hover {
+  color: turquoise;
+}
+
 /* BURGER MENU STYLING  */
 
 /* Position and sizing of burger button */
