@@ -3,6 +3,7 @@ import { List, ListItem } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';
+import avatarPhoto from '../assets/img/teacup.jpg';
 import { grey400, darkBlack } from 'material-ui/styles/colors';
 import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
@@ -32,7 +33,7 @@ const ShopList = ({ locations }) => (
     {locations.map(location => {
       return <div>
         <ListItem
-          leftAvatar={<Avatar src="images/ok-128.jpg" />}
+          leftAvatar={<Avatar src={avatarPhoto} />}
           rightIconButton={rightIconMenu}
           primaryText={location.shopname}
           secondaryText={
@@ -50,17 +51,3 @@ const ShopList = ({ locations }) => (
 );
 
 export default ShopList;
-
-
-
-{/* <ul>
-    {locations.map((location, i) => {
-         return <li key={i}>
-         {location.name} 
-         {location.street} 
-         {location.city} 
-         {location.state} 
-         {location.rating}
-         </li>;})
-     }
-     </ul>  */}
