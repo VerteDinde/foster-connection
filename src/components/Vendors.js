@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import vendors from '../data/vendors';
 
 import { List, ListItem } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
@@ -32,18 +33,23 @@ class Vendors extends Component {
     return (
       <List style={{ width: '50%' }}>
         <Subheader>Vendor List</Subheader>
-        <ListItem
-          leftAvatar={<Avatar src="images/ok-128.jpg" />}
-          rightIconButton={rightIconMenu}
-          primaryText="Vendor Name"
-          secondaryText={
-            <p>
-              <span style={{ color: darkBlack }}>Website</span> Description -- Category
-            </p>
-          }
-          secondaryTextLines={2}
-        />
-        <Divider inset={true} />
+        {vendors.map(vendor => {
+          return <div>
+            <ListItem
+              leftAvatar={<Avatar src="images/ok-128.jpg" />}
+              rightIconButton={rightIconMenu}
+              primaryText={vendor.name}
+              secondaryText={
+                <p>
+                  <span style={{ color: darkBlack }}>{vendor.website}</span> {vendor.description} -- {vendor.category}
+                </p>
+              }
+              secondaryTextLines={2}
+            />
+            <Divider inset={true} />
+          </div>;
+        })
+        };
       </List>
     );
   }
