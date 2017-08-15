@@ -5,9 +5,13 @@ import {
   Marker,
   GoogleApiWrapper
 } from 'google-maps-react';
+// import Form from './Form';
+import TextField from 'material-ui/TextField';
+
 
 // TODO: add function for places API (autocomplete!) 
 // https://www.npmjs.com/package/google-maps-react
+
 
 export class MapContainer extends Component {
   constructor(props) {
@@ -44,48 +48,52 @@ export class MapContainer extends Component {
     const { locations } = this.props;
     const { selectedPlace } = this.state;
 
+  
     return (
-        <Map 
-          google={this.props.google}
-          initialCenter={{
-            lat: 45.532956,
-            lng: -122.684665
-          }}
-          zoom={12}
-          scrollwheel={false}
-          style={{ 
-            width: '50%',
-          }}
-          >
-          {locations.map((location, i) => {
-            return <Marker
-              key={i}
-              onClick={this.onMarkerClick}
-              name={location.name}
-              shopUrl={location.shopUrl}
-              street={location.street}
-              city={location.city}
-              state={location.state}
-              zip={location.zip}
-              country={location.country}
-              position={{ lat: location.latitude, lng: location.longitude }}
-            />;
-          })
-          }
-          <InfoWindow
-            marker={this.state.activeMarker}
-            visible={this.state.showingInfoWindow}>
-            <div>
-              <h1>
-                {selectedPlace.name}<br />
-                {selectedPlace.shopUrl}<br />
-                {selectedPlace.street}<br />
-                {selectedPlace.city}, {selectedPlace.state}<br />
-                {selectedPlace.zip}, {selectedPlace.country}
-              </h1>
-            </div>
-          </InfoWindow>
-        </Map>
+        <div style={{ height: '200'}}>
+          <TextField hintText="Search Teashops"/>
+          <Map 
+            google={this.props.google}
+            initialCenter={{
+              lat: 45.532956,
+              lng: -122.684665
+            }}
+            zoom={12}
+            scrollwheel={false}
+            style={{ 
+              width: '50%',
+            }}
+            >
+            {locations.map((location, i) => {
+              return <Marker
+                key={i}
+                onClick={this.onMarkerClick}
+                name={location.name}
+                shopUrl={location.shopUrl}
+                street={location.street}
+                city={location.city}
+                state={location.state}
+                zip={location.zip}
+                country={location.country}
+                position={{ lat: location.latitude, lng: location.longitude }}
+              />;
+            })
+            }
+            <InfoWindow
+              marker={this.state.activeMarker}
+              visible={this.state.showingInfoWindow}>
+              <div>
+                <h1>
+                  {selectedPlace.name}<br />
+                  {selectedPlace.shopUrl}<br />
+                  {selectedPlace.street}<br />
+                  {selectedPlace.city}, {selectedPlace.state}<br />
+                  {selectedPlace.zip}, {selectedPlace.country}
+                </h1>
+              </div>
+            </InfoWindow>
+          </Map>
+        </div>
     );
   }
 }

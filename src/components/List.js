@@ -31,13 +31,13 @@ const ShopList = ({ locations }) => (
     <Subheader>Today</Subheader>
     <ListItem
       leftAvatar={<Avatar src="images/ok-128.jpg" />}
-        rightIconButton={rightIconMenu}
+      rightIconButton={rightIconMenu}
       primaryText="Best teahouse"
       secondaryText={
         <p>
           <span style={{ color: darkBlack }}>Best teahouse</span> --
-              teashopppsss
-            </p>
+          teashopppsss
+        </p>
       }
       secondaryTextLines={2}
     />
@@ -49,8 +49,8 @@ const ShopList = ({ locations }) => (
       secondaryText={
         <p>
           <span style={{ color: darkBlack }}>Best teahouse</span> --
-              teashopppsss
-            </p>
+          teashopppsss
+        </p>
       }
       secondaryTextLines={2}
     />
