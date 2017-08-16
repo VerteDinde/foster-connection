@@ -57,7 +57,7 @@ const data = [
   {
     shopname: 'Dayi Pu\'er Tea Franchise Store',
     shopUrl: '',
-    description: '<p></p>',
+    description: 'A cozy franchise shop based in the Yunnan province, specializing in oolongs.',
     street: 'Yunfang E Rd, Xishan Qu',
     city: 'Yunnan',
     state: 'Kunming',

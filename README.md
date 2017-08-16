@@ -16,7 +16,7 @@ This is our second version of GongFuTea.org site, rebuilt in React and Node.
 ## Features
 
 #### Maps location data
-We originally used the Google Maps API
+We originally used the Google Maps API, and are extending both the Google Maps and Google Places functionality for this second version.
 
 #### User-curated database
 We want our users to identify and submit their own favorite tea shops, tea houses and tea plantations, rather than rely on information from Google. All of the tea locations in our database have been selected and submitted by users.
@@ -49,17 +49,4 @@ Gongfucha does accept pull requests. Please include clear comments in both your 
 
 ## About the Founders 
 * [Nicky](https://github.com/NeversSync)
-* [Yuval](https://github.com/themarquisdesheric)
 * [Keeley](https://github.com/VerteDinde)
-
-
- - Header / Nav
- - Map
- - List of Stores
- - Submit Form
- - Footer
- - View?
-  - Main / About
-  - Online Tea Retailers
-  - User Account Page
-  - Media / Blog Tab

@@ -36,7 +36,7 @@ export default class VendorCard extends React.Component {
         />
         <CardTitle title={name} subtitle={website} expandable={true} />
         <CardText expandable={true}>
-          {description}
+          {description} {categories}
         </CardText>
         <CardActions>
           <FlatButton label="Website" onClick={this.handleExpand} />
