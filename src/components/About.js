@@ -1,33 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
 import backgroundImg from '../assets/img/puer-tea-table.png';
-import { Copy } from '../Styles/utils.js';
+import { Copy, Title } from '../Styles/utils.js';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  padding: 50px;
+  padding: 20px;
   color: white;
-  line-height: 40px;
+  line-height: 30px;
   background: url(${backgroundImg});
   background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  background-repeat: repeat;
+
+  @media (min-width: 1050px) {
+    background-repeat: no-repeat;
+    height: 93.75vh;
+	}
 `;
 
 const Header = styled.div`
 display: flex;
 flex-direction: column;
 align-self: center;
+text-align: center;
 width: 80%;
-margin: 20px;
-font-size: 1.5em;
+height: 27%;
+font-size: .75em;
+
+@media (min-width: 1050px) {
+  font-size: .85em;
+}
 `;
 
-const Title = styled.h2`
+const AboutTitle = styled.h2`
   text-align: center;
+  font-size: 1.5em;
+
+  @media (min-width: 1050px) {
+    padding: 20px;
+  }
 `;
 
 const AboutText = Copy.extend`
@@ -36,15 +49,23 @@ const AboutText = Copy.extend`
   align-self: center;
   width: 80%;
   color: white;
+  line-height: 2em;
+`;
+
+const Line = styled.hr`
+  width 80%;
+  color: white;
+  margin-bottom: 30px;
 `;
 
 export default function About() {
   return (
     <Wrapper>
       <Header>
-        <Title>About</Title>
+        <AboutTitle>About</AboutTitle>
         <h3>A resource for individuals interested in the culture and practice of tea through the methodology of Gong Fu Cha 功夫茶; Good tea and lifestyle through practice.</h3>
       </Header>
+      <Line/>
       <AboutText>
         <p>
           This website is an extension of the <a href="https://www.facebook.com/groups/gongfucha/">Gong Fu Cha Facebook group,</a> an international social network of tea enthusiasts. The purpose of this website is to celebrate, spread, develop, and illuminate the rich culture and activity that is <a href="http://verdanttea.com/modern-gongfu/" target="_blank">Gong Fu Cha 功夫茶</a>. We provide a way to find tea shops, tea houses, tea events, and other points of interests through a user generated <a id="tea-map-link" href="/" />>tea map.We also facilitate finding information on the what, where, why, when, and how of Gong Fu Cha for people both new and experienced.
