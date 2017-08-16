@@ -42,7 +42,7 @@ const ShopList = ({ locations }) => (
               {location.shopUrl}
             </p>
           }
-          secondaryTextLines={2}
+          secondaryTextLines={3}
         />
         <Divider inset={true} />
       </div>;
