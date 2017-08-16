@@ -29,7 +29,7 @@ const rightIconMenu = (
 
 const ShopList = ({ locations }) => (
   <List style={{ width: '50%' }}>
-    <Subheader>Today</Subheader>
+    <Subheader>Tea Shops and Locations</Subheader>
     {locations.map(location => {
       return <div>
         <ListItem
