@@ -31,11 +31,11 @@ const ShopList = ({ locations }) => (
   <List style={{ width: '50%' }}>
     <Subheader>Tea Shops and Locations</Subheader>
     {locations.map(location  => {
-      return <div key={location.shopname}>
+      return <div key={location.name}>
         <ListItem
           leftAvatar={<Avatar src={avatarPhoto} />}
           rightIconButton={rightIconMenu}
-          primaryText={location.shopname}
+          primaryText={location.name}
           secondaryText={
             <p>
               <span style={{ color: darkBlack }}>{location.street} {location.city} {location.state}</span> | {location.description}
