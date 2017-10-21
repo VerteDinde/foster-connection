@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import backgroundImage from '../assets/img/tetsu2.png';
 import List from './List';
-import MapContainer from './Map';
+import Map from './Map';
 
 const Wrapper = styled.div`
   height: 1900px;
@@ -52,7 +52,7 @@ class Main extends Component {
         </BackgroundImage>
         <PlacesWrapper>
             <List locations={locations} />
-            <MapContainer locations={locations}/>
+            <Map locations={locations}/>
         </PlacesWrapper>
       </Wrapper>
     );

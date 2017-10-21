@@ -50,7 +50,7 @@ export class MapContainer extends Component {
 
   
     return (
-        <div style={{ height: '200'}}>
+        <div style={{ height: '200px'}}>
           <TextField hintText="Search Teashops"/>
           <Map 
             google={this.props.google}
@@ -63,6 +63,7 @@ export class MapContainer extends Component {
             style={{ 
               width: '50%',
             }}
+            clickableIcons={true}
             >
             {locations.map((location, i) => {
               return <Marker
@@ -99,5 +100,7 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: (process.env.REACT_API_GOOGLE_API_KEY)
+  // apiKey: (process.env.REACT_API_GOOGLE_API_KEY)
+  apiKey: ('AIzaSyBz9msJ3yamy2OLY1PMPZps23bbcMoceEE'),
+  version: '3.28'
 })(MapContainer);
