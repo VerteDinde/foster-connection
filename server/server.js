@@ -6,7 +6,8 @@ const debug = require('debug')('express-react:server');
 const http = require('http');
 
 /** Get port from environment and store in Express. */
-const port = normalizePort(process.env.PORT || '4001');
+const port = normalizePort(3001);
+// const port = normalizePort(process.env.PORT || '4001');
 app.set('port', port);
 
 const server = http.createServer(app);
@@ -66,3 +67,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+console.log('server up on', server.address());
