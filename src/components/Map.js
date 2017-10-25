@@ -5,9 +5,7 @@ import {
   Marker,
   GoogleApiWrapper
 } from 'google-maps-react';
-// import Form from './Form';
-import TextField from 'material-ui/TextField';
-
+import Form from './Form';
 
 // TODO: add function for places API (autocomplete!) 
 // https://www.npmjs.com/package/google-maps-react
@@ -51,7 +49,7 @@ export class MapContainer extends Component {
   
     return (
         <div style={{ height: '200px'}}>
-          <TextField hintText="Search Teashops"/>
+          <Form/>
           <Map 
             google={this.props.google}
             initialCenter={{
