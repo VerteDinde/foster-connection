@@ -6,8 +6,9 @@ import {
   GoogleApiWrapper
 } from 'google-maps-react';
 import Form from './Form';
+import Search from './Search';
 
-// TODO: add function for places API (autocomplete!) 
+// TODO: add function for places API (autocomplete!)
 // https://www.npmjs.com/package/google-maps-react
 
 
@@ -46,11 +47,11 @@ export class MapContainer extends Component {
     const locations = this.props.resources;
     const { selectedPlace } = this.state;
 
-  
+
     return (
         <div style={{ height: '200px'}}>
           <Form/>
-          <Map 
+          <Map
             google={this.props.google}
             initialCenter={{
               lat: 45.532956,
@@ -58,7 +59,7 @@ export class MapContainer extends Component {
             }}
             zoom={12}
             scrollwheel={false}
-            style={{ 
+            style={{
               width: '50%',
             }}
             clickableIcons={true}

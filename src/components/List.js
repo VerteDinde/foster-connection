@@ -9,6 +9,7 @@ import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
+import Search from './Search';
 
 const iconButtonElement = (
   <IconButton
@@ -30,6 +31,7 @@ const rightIconMenu = (
 const ShopList = ({ resources }) => (
   <List style={{ width: '50%' }}>
     <Subheader>Families, Resources and Mentors</Subheader>
+    <Search />
     {resources.map(resource  => {
       return <div key={resource.name}>
         <ListItem
