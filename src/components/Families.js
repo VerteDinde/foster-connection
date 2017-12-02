@@ -26,13 +26,21 @@ flex-direction: column;
 color: white;
 `;
 
+const SearchContainer = styled.div`
+height: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: white;
+`;
+
 const Title = styled.h1`
 font-weight: 400;
 font-size: 5em;
 `;
 
-const KEYS_TO_FILTERS = ['name', 'website'];
-
+const KEYS_TO_FILTERS = ['name'];
 
 class Families extends Component {
   constructor (props) {
@@ -53,7 +61,9 @@ class Families extends Component {
           </HeaderContainer>
         </BackgroundImage>
         <List style={{ width: '75%', marginLeft: '10%' }}>
-        <SearchInput className="search-input" onChange={this.searchUpdated} />
+        <SearchContainer>
+          <SearchInput className="search-input" onChange={this.searchUpdated} />
+        </SearchContainer>
           {filteredFamilies.map(family => {
             return <div>
               <FamilyCard family={family} />
