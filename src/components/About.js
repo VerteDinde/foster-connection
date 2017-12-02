@@ -73,7 +73,7 @@ export default function About() {
       <AboutText>
         <p>
           <p>Being a foster family can be a confusing and isolating experience. We wanted to provide foster families with a vibrant network of other families and resources that they can connect with.</p>
-          <p>Primary Activities:Promote the delivery of services and supports to foster families, support quality foster care by promoting excellence and best practice, provide services and supports to state and local foster parent associations, develop and provide education and training, information, dissemination of information to the public, advocate at the local, state and national level; promote networking and collaboration, promote positive image of family foster care; greater visibility; encourage active involvement</p>
+          <p>Primary Activities: Promote the delivery of services and supports to foster families, support quality foster care by promoting excellence and best practice, provide services and supports to state and local foster parent associations, develop and provide education and training, information, dissemination of information to the public, advocate at the local, state and national level; promote networking and collaboration, promote positive image of family foster care; greater visibility; encourage active involvement</p>
         </p>
       </AboutText>
     </Wrapper>

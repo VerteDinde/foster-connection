@@ -21,11 +21,11 @@ Features currently in development:
 
 
 ## Special Thanks
-* Amy Chen
+* Nike and Puppet for hosting the hackathon, and the judges and volunteers for giving their time.
 
-## About the Founders 
+## About the Authors
 * [Caitlin]()
-* [Holly]()
-* [Kristy]()
-* [Ketki]()
-* [Keeley](https://github.com/VerteDinde)
+* [Holly Wilkalis]()
+* [Kristy Saunders]()
+* [Ketki Kanitkar]()
+* [Keeley Hammond](https://github.com/VerteDinde)

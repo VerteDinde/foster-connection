@@ -3,7 +3,7 @@ import { List, ListItem } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';
-import avatarPhoto from '../assets/img/ketan-rajput-345427.jpg';
+import avatarPhoto from '../assets/img/avatar.png';
 import { grey400, darkBlack } from 'material-ui/styles/colors';
 import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';

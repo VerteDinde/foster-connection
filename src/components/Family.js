@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardActions, CardHeader, CardTitle, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-import avatarPhoto from '../assets/img/ketan-rajput-345427.jpg';
+import avatarPhoto from '../assets/img/avatar.png';
 
 export default class FamilyCard extends React.Component {
   constructor(props) {
