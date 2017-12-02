@@ -5,6 +5,7 @@ import families from '../data/families';
 import { List } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import FamilyCard from './Family';
+import Search from './Search';
 
 const BackgroundImage = styled.div`
 height: 30vh;
@@ -38,6 +39,7 @@ class Families extends Component {
           </HeaderContainer>
         </BackgroundImage>
         <List style={{ width: '75%', marginLeft: '10%' }}>
+        <Search />
           {families.map(family => {
             return <div>
               <FamilyCard family={family} />

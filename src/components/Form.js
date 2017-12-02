@@ -3,16 +3,16 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import autocompleteApi from '../services/autocompleteApi';
 
-class Form extends Component {
+class Form extends React.Component {
   state = {
     textField: ''
   };
 
-  handleSubmit(e) { 
+  handleSubmit(e) {
     e.preventDefault();
     // Add location once selected from drop down (post to /locations)
   }
-  
+
   handleChange({ target }) {
     this.setState({ textField: target.value });
     autocompleteApi.getPlace(target.value);

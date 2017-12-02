@@ -10,7 +10,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Login from './components/Login';
 import Families from './components/Families';
-import shopData from './data/data'; 
+import shopData from './data/data';
 
 class App extends Component {
   constructor() {
