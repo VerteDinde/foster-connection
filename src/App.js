@@ -11,7 +11,7 @@ import About from './components/About';
 import Login from './components/Login';
 import Locker from './components/Locker';
 import Families from './components/Families';
-import shopData from './data/data'; 
+import shopData from './data/data';
 
 class App extends Component {
   constructor() {
