@@ -62,6 +62,7 @@ export class MapContainer extends Component {
             style={{
               width: '50%',
             }}
+
             clickableIcons={true}
             >
             {locations.map((location, i) => {

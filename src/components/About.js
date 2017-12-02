@@ -29,8 +29,12 @@ width: 80%;
 height: 27%;
 font-size: .75em;
 
-@media (min-width: 1050px) {
+@media (min-width: 950px) {
   font-size: .85em;
+}
+
+@media screen and (max-width: 480px) {
+  height: 40vh;
 }
 `;
 
@@ -68,11 +72,8 @@ export default function About() {
       <Line/>
       <AboutText>
         <p>
-          This website is an extension of the <a href="https://www.facebook.com/groups/gongfucha/">Gong Fu Cha Facebook group,</a> an international social network of tea enthusiasts. The purpose of this website is to celebrate, spread, develop, and illuminate the rich culture and activity that is <a href="http://verdanttea.com/modern-gongfu/" target="_blank">Gong Fu Cha 功夫茶</a>. We provide a way to find tea shops, tea houses, tea events, and other points of interests through a user generated <a id="tea-map-link" href="/" />>tea map.We also facilitate finding information on the what, where, why, when, and how of Gong Fu Cha for people both new and experienced.
-          <p>
-          We are just getting started here. In the future, we will add; a blog, a photo gallery, a list of online tea vendors complete with reviews, a list of tea blogs, a database of tasting notes, and more.
-          We founded the Gong Fu Cha social network to facilitate easy access to quality tea experiences, tea companies, tea ware, tea blogs, and tea itself. Our users build this resource; all reviews and locations are user-generated, not automatically pulled from any outside sites. Please, look around and jump in.
-          </p>
+          <p>Being a foster family can be a confusing and isolating experience. We wanted to provide foster families with a vibrant network of other families and resources that they can connect with.</p>
+          <p>Primary Activities:Promote the delivery of services and supports to foster families, support quality foster care by promoting excellence and best practice, provide services and supports to state and local foster parent associations, develop and provide education and training, information, dissemination of information to the public, advocate at the local, state and national level; promote networking and collaboration, promote positive image of family foster care; greater visibility; encourage active involvement</p>
         </p>
       </AboutText>
     </Wrapper>
