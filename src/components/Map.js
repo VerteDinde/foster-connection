@@ -58,9 +58,6 @@ export class MapContainer extends Component {
             }}
             zoom={12}
             scrollwheel={false}
-            style={{ 
-              width: '50%',
-            }}
             clickableIcons={true}
             >
             {locations.map((location, i) => {

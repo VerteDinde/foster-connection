@@ -7,25 +7,39 @@ import Divider from 'material-ui/Divider';
 import FamilyCard from './Family';
 
 const BackgroundImage = styled.div`
-height: 30vh;
+height: 50vh;
 width: 100vw;
 background: url(${backgroundImage});
 background-size: cover;
 background-repeat: no-repeat;
+
+
+@media screen and (max-width: 600px) {
+  height: 30vh;
+}
 `;
 
 const HeaderContainer = styled.div`
-height: 30vh;
+height: 50vh;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-color: white;
+color: black;
+
+
+@media screen and (max-width: 600px) {
+  height: 40vh;
+}
 `;
 
 const Title = styled.h1`
 font-weight: 400;
 font-size: 5em;
+
+@media screen and (max-width: 600px) {
+  font-size: 2em;
+}
 `;
 
 class Families extends Component {
@@ -34,10 +48,10 @@ class Families extends Component {
       <div>
         <BackgroundImage>
           <HeaderContainer>
-            <Title>Family Network</Title>
+            <Title>Resource Network</Title>
           </HeaderContainer>
         </BackgroundImage>
-        <List style={{ width: '75%', marginLeft: '10%' }}>
+        <List>
           {families.map(family => {
             return <div>
               <FamilyCard family={family} />

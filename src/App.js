@@ -38,8 +38,8 @@ class App extends Component {
             <Switch>
               <Route exact path='/' render={() => <Main resources={resources}/>} />
               <Route path='/about' render={() => <About />} />
-              <Route path='/places' render={() => <Main resources={resources}/>} />
-              <Route path='/families' render={() => <Families user={user}/>} />
+              <Route path='/families' render={() => <Main resources={resources}/>} />
+              <Route path='/resources' render={() => <Families user={user}/>} />
               <Route path='/login' render={() => <Login user={user}/>} />
               <Route path='/locker' render={() => <Locker user={user}/>} />
               <Redirect to='/' />

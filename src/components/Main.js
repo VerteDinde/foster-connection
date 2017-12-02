@@ -21,6 +21,10 @@ const HeaderContainer = styled.div`
   align-items: center;
   flex-direction: column;
   color: black;
+
+  @media screen and (max-width: 480px) {
+    height: 40vh;
+  }
 `;
 
 const PlacesWrapper = styled.div`
@@ -31,11 +35,22 @@ const PlacesWrapper = styled.div`
 const Title = styled.h1`
   font-weight: 400;
   font-size: 5em;
+
+  @media screen and (max-width: 480px) {
+    font-weight: 300;
+    font-size: 2em;
+  }
 `;
 
 const SubHeader = styled.h2`
   font-size: 2em;
   font-weight: 400;
+
+
+  @media screen and (max-width: 480px) {
+    font-weight: 300;
+    font-size: 1em;
+  }
 `;
 
 class Main extends Component {
@@ -50,10 +65,8 @@ class Main extends Component {
             <SubHeader>A community of foster parents and children</SubHeader>
           </HeaderContainer>
         </BackgroundImage>
-        <PlacesWrapper>
-            <List resources={resources} />
-            <Map resources={resources}/>
-        </PlacesWrapper>
+        <List resources={resources} />
+        <Map resources={resources}/>
       </Wrapper>
     );
   }
