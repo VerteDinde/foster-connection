@@ -9,6 +9,7 @@ import Main from './components/Main';
 import Nav from './components/Nav';
 import About from './components/About';
 import Login from './components/Login';
+import Locker from './components/Locker';
 import Families from './components/Families';
 import shopData from './data/data'; 
 
@@ -27,6 +28,8 @@ class App extends Component {
 
   render() {
     const { user, resources } = this.state;
+    console.log(user);
+    
     return (
       <Router>
         <div>
@@ -38,6 +41,7 @@ class App extends Component {
               <Route path='/places' render={() => <Main resources={resources}/>} />
               <Route path='/families' render={() => <Families user={user}/>} />
               <Route path='/login' render={() => <Login user={user}/>} />
+              <Route path='/locker' render={() => <Locker user={user}/>} />
               <Redirect to='/' />
             </Switch>
           </main>

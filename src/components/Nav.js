@@ -25,7 +25,9 @@ class Nav extends Component {
   }
 
   render() {
-    const { user } = this.props;
+    const { user } = this.state;
+    console.log(user);
+
     return (
       <div id='outer-container'>
         <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
@@ -34,7 +36,7 @@ class Nav extends Component {
           <Link to ='/places'><NavItem>Places</NavItem></Link>
           <Link to ='/families'><NavItem>Families</NavItem></Link>
           {user
-            ? <Link to ='/login'><NavItem>My Account</NavItem></Link>
+            ? <Link to ='/locker'><NavItem>My Locker</NavItem></Link>
             : <Link to ='/login'><NavItem>Log In</NavItem></Link>
           }
         </Menu>
