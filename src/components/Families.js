@@ -6,6 +6,8 @@ import { List } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import FamilyCard from './Family';
 import Search from './Search';
+import SearchInput, {createFilter} from 'react-search-input';
+
 
 const BackgroundImage = styled.div`
 height: 30vh;
@@ -29,8 +31,20 @@ font-weight: 400;
 font-size: 5em;
 `;
 
+const KEYS_TO_FILTERS = ['name', 'website'];
+
+
 class Families extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      searchTerm: ''
+    }
+    this.searchUpdated = this.searchUpdated.bind(this)
+  }
   render() {
+    const filteredFamilies = families.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
+
     return (
       <div>
         <BackgroundImage>
@@ -39,8 +53,8 @@ class Families extends Component {
           </HeaderContainer>
         </BackgroundImage>
         <List style={{ width: '75%', marginLeft: '10%' }}>
-        <Search />
-          {families.map(family => {
+        <SearchInput className="search-input" onChange={this.searchUpdated} />
+          {filteredFamilies.map(family => {
             return <div>
               <FamilyCard family={family} />
               <Divider inset={true} />
@@ -51,7 +65,9 @@ class Families extends Component {
       </div>
     );
   }
-
+  searchUpdated (term) {
+    this.setState({searchTerm: term})
+  }
 }
 
 export default Families;
