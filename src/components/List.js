@@ -3,7 +3,7 @@ import { List, ListItem } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';
-import avatarPhoto from '../assets/img/teacup.jpg';
+import avatarPhoto from '../assets/img/ketan-rajput-345427.jpg';
 import { grey400, darkBlack } from 'material-ui/styles/colors';
 import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
@@ -22,24 +22,24 @@ const iconButtonElement = (
 
 const rightIconMenu = (
   <IconMenu iconButtonElement={iconButtonElement}>
-    <MenuItem>Share</MenuItem>
-    <MenuItem>Website</MenuItem>
+    <MenuItem>More Info</MenuItem>
+    <MenuItem>Email</MenuItem>
   </IconMenu>
 );
 
-const ShopList = ({ locations }) => (
+const ShopList = ({ resources }) => (
   <List style={{ width: '50%' }}>
-    <Subheader>Tea Shops and Locations</Subheader>
-    {locations.map(location  => {
-      return <div key={location.name}>
+    <Subheader>Families, Resources and Mentors</Subheader>
+    {resources.map(resource  => {
+      return <div key={resource.name}>
         <ListItem
           leftAvatar={<Avatar src={avatarPhoto} />}
           rightIconButton={rightIconMenu}
-          primaryText={location.name}
+          primaryText={resource.name}
           secondaryText={
             <p>
-              <span style={{ color: darkBlack }}>{location.street} {location.city} {location.state}</span> | {location.description}
-              {location.shopUrl}
+              <span style={{ color: darkBlack }}>{resource.category}</span> | {resource.description}
+              {resource.shopUrl}
             </p>
           }
           secondaryTextLines={2}

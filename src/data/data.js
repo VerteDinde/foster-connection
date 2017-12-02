@@ -1,8 +1,8 @@
 const data = [
   {
-    name: 'Fly Awake Tea Garden',
-    shopUrl: 'http://flyawakepdx.com/',
-    description: 'Fly Awake is a secret spot in N Portland. Our Chinese teas are phenomenal, pu-ehr cakes galore, a tea aficionados paradises. We also make chai like your Indian Grandma. We also carry organic herbal dream teas and more from Brown Bear Herbs. We\'re not messing around. Come by and experience the magic and fly awake.',
+    name: 'New Avenues for Youth',
+    shopUrl: 'http://newavenues.org/',
+    description: 'New Avenues for Youth provides resources for young people leaving the foster care system.',
     latitude: 45.549731,
     longitude: -122.676024,
     street: '909 N Beech St.',
@@ -10,10 +10,10 @@ const data = [
     state: 'OR',
     zip: '97227',
     country: 'USA',
-    category: 'tea house'
+    category: 'Resource'
   },
   {
-    name: 'Heavens Tea, School of Tea Arts',
+    name: 'Jim and Jane Bananas',
     shopUrl: 'http://www.heavenstea.com/',
     description: 'Tea is about making every moment special. We offer Public Tea Classes, Rare Tastings, Transformational Tea Journeys, Private Healing Sessions, Meditation and Tea in Nature outings. We are devoted to giving you an experience of Chinese tea in relation to self cultivation, meditation, healing and in support of your creative expression in the world.',
     latitude: 45.476545,
@@ -23,10 +23,10 @@ const data = [
     state: 'OR',
     zip: '97215',
     country: 'USA',
-    category: 'tea house'
+    category: 'Family'
   },
   {
-    name: 'Tao of Tea',
+    name: 'Carrie and Samantha Johnson',
     shopUrl: 'http://www.taooftea.com/',
     description: 'Our focus is to offer teas from the Camellia Sinensis tea plants. Similar to grapes, the tea plants have many regions, varietals, processing methods, and seasons. More importantly, good tea sells out very quickly and is seldom made in large quantities. We as merchants are particular in working with growers to secure exceptional-tasting leaf each season. We pledge to share with you the artistry of the leaves, their origin, processing method, flavor vocabulary, and spirit.',
     latitude: 45.516211,
@@ -36,10 +36,10 @@ const data = [
     state: 'OR',
     zip: '97214',
     country: 'USA',
-    category: 'tea shop'
+    category: 'Family'
   },
   {
-    name: 'Song Tea & Ceramics',
+    name: 'Keeley Hammond and David Rappoccio',
     shopUrl: 'https://songtea.com/',
     description: 'Each year, we assemble a collection of traditional, rare and experimental tea from China and Taiwan. We look for skillfully crafted leaves from clean growing regions – teas with structure, texture, and complexity. More importantly, every tea in the collection needs to be delicious.',
     street: '2120 Sutter Street',
@@ -47,10 +47,10 @@ const data = [
     state: 'CA',
     zip: '94115',
     country: 'USA',
-    category: 'tea shop'
+    category: 'Family'
   },
   {
-    name: 'Songfang Tea House',
+    name: 'Aung Si Sung',
     shopUrl: 'http://www.songfangtea.com/',
     description: 'Song Fang Maison de Thé specializes in the finest quality Chinese and French teas for sale and to savor on the premises. They offer a selection of 70 premium teas from China and France.',
     street: '227 Yongjia Rd',
@@ -58,10 +58,10 @@ const data = [
     state: 'Xuhui Qu',
     zip: '200020',
     country: 'China',
-    category: 'tea shop'
+    category: 'Mentor'
   },
   {
-    name: 'Dayi Pu\'er Tea Franchise Store',
+    name: 'Balaji Krishnamurthy',
     shopUrl: '',
     description: 'A cozy franchise shop based in the Yunnan province, specializing in oolongs.',
     street: 'Yunfang E Rd, Xishan Qu',
@@ -69,10 +69,10 @@ const data = [
     state: 'Kunming',
     zip: '650034',
     country: 'China',
-    category: 'tea shop'
+    category: 'Mentor'
   },
   {
-    name: 'LockCha Tea House',
+    name: 'Susan Albright',
     shopUrl: 'http://www.lockcha.com/',
     description: 'Tranquil outfit in the middle of a park offering vegetarian dim sum dishes & premium teas.',
     street: 'Man Shing Industrial Building Suite 1601, 307-311',
@@ -80,7 +80,7 @@ const data = [
     state: '',
     zip: '',
     country: 'China',
-    category: 'tea house'
+    category: 'Family'
   },
   {
     name: 'Wisteria Tea House',

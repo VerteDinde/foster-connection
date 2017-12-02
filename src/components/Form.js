@@ -21,7 +21,7 @@ class Form extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit.bind(this)}>
-        <TextField onChange={this.handleChange.bind(this)} hintText="Search Teashops"/>
+        <TextField onChange={this.handleChange.bind(this)} hintText="Search"/>
         <RaisedButton type="submit" label="Add"/>
       </form>
     );

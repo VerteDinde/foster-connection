@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import backgroundImg from '../assets/img/puer-tea-table.png';
+import backgroundImg from '../assets/img/alberto-casetta-349138.jpg';
 import { Copy, Title } from '../Styles/utils.js';
 
 const Wrapper = styled.div`
@@ -62,8 +62,8 @@ export default function About() {
   return (
     <Wrapper>
       <Header>
-        <AboutTitle>About</AboutTitle>
-        <h3>A resource for individuals interested in the culture and practice of tea through the methodology of Gong Fu Cha 功夫茶; Good tea and lifestyle through practice.</h3>
+        <AboutTitle>About Our Network</AboutTitle>
+        <h3>A resource for families who want to foster children, and the children who are soon leaving the foster network.</h3>
       </Header>
       <Line/>
       <AboutText>

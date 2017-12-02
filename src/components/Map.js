@@ -43,7 +43,7 @@ export class MapContainer extends Component {
   }
 
   render() {
-    const { locations } = this.props;
+    const locations = this.props.resources;
     const { selectedPlace } = this.state;
 
   

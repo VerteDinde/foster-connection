@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import backgroundImage from '../assets/img/tetsu2.png';
+import backgroundImage from '../assets/img/london-scout-27290.jpg';
 import List from './List';
 import Map from './Map';
 
@@ -20,7 +20,7 @@ const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: black;
 `;
 
 const PlacesWrapper = styled.div`
@@ -40,19 +40,19 @@ const SubHeader = styled.h2`
 
 class Main extends Component {
   render() {
-    const { user, locations } = this.props;
+    const { user, resources } = this.props;
 
     return (
       <Wrapper>
         <BackgroundImage>
           <HeaderContainer>
-            <Title>GONG FU TEA</Title>
-            <SubHeader>A site for tea lovers</SubHeader>
+            <Title>FOSTER CONNECTION</Title>
+            <SubHeader>A community of foster parents and children</SubHeader>
           </HeaderContainer>
         </BackgroundImage>
         <PlacesWrapper>
-            <List locations={locations} />
-            <Map locations={locations}/>
+            <List resources={resources} />
+            <Map resources={resources}/>
         </PlacesWrapper>
       </Wrapper>
     );
