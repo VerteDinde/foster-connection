@@ -13,7 +13,7 @@ const data = [
     category: 'Resource'
   },
   {
-    name: 'Project Lemonade',
+    name: 'Samantha Powers',
     shopUrl: 'http://www.projectlemonadepdx.org',
     description: 'Project Lemonade provides foster youth with a back-to-school shopping experience and offers support to inspire self-esteem and promote success. Store is open annually in August, pre-registration required in July.',
     street: '1006 Lloyd Center',
@@ -21,7 +21,7 @@ const data = [
     state: 'OR',
     zip: '97232',
     country: 'USA',
-    category: 'Resource, Youth, Family'
+    category: 'Family'
   },
   {
     name: 'Bridge Meadows',

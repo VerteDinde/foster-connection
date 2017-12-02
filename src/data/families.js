@@ -26,7 +26,7 @@ const families = [
     categories: ['training, foster family support']
   },
   {
-    name: 'Child Welfare Information Gateway Foster Parent Inservice Training)',
+    name: 'Foster Parent Inservice Training',
     website: 'https://www.childwelfare.gov/topics/management/training/curricula/foster/foster/',
     description: 'Resources address online curricula and materials offering inservice training to foster families on topics such as behavior management, sibling issues, independent living, and more. ',
     categories: ['training']
@@ -52,12 +52,6 @@ const families = [
   {
     name: 'Bridge Meadows',
     website: 'https://www.bridgemeadows.org/',
-    description: 'Bridge Meadows develops and sustains intergenerational neighborhoods for adoptive families of youth formerly in foster care that promote permanency, community and caring relationships while offering safety and meaningful purpose in the daily lives of older adults. Youth coming from foster care find loving adoptive parents, honorary grandparents and valued mentors.',
-    category: 'Family, Housing'
-  },
-  {
-    name: 'Bridge Meadows',
-    website: 'http://www.bridgemeadowsbeavertonapts.com/',
     description: 'Bridge Meadows develops and sustains intergenerational neighborhoods for adoptive families of youth formerly in foster care that promote permanency, community and caring relationships while offering safety and meaningful purpose in the daily lives of older adults. Youth coming from foster care find loving adoptive parents, honorary grandparents and valued mentors.',
     category: 'Family, Housing'
   },
