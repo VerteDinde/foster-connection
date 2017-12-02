@@ -31,7 +31,6 @@ const rightIconMenu = (
 const ShopList = ({ resources }) => (
   <List style={{ width: '50%' }}>
     <Subheader>Families, Resources and Mentors</Subheader>
-    <Search />
     {resources.map(resource  => {
       return <div key={resource.name}>
         <ListItem
