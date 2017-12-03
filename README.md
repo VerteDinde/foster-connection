@@ -15,7 +15,7 @@ To run or contribute to the project, follow these instructions:
     * `npm start`
 * Go to localhost:3000 - you should see a running version of the site.
 
-Additionally, the live site can be accessed on [foster-connections.herokuapp.com](foster-connections.herokuapp.com).
+Additionally, the live site can be accessed on [foster-connections.herokuapp.com](https://foster-connections.herokuapp.com/).
 
 ## Features
 * Up to date list of resources for foster families
