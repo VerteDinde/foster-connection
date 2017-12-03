@@ -1,9 +1,7 @@
 # WECODE Hackathon Team 8: Foster Connection
 
 ## Summary
-Foster Connections is an online database for foster families and former foster children (who now serve as mentors) in the Portland area. 
-
-For both foster families and their children, we want to provide a quick, easy to use hub for local resources. These resources are easy for users to manually input and update, which ensures that they are always relevant and current.  
+Foster Connections is an online database for foster families and former foster children (who now serve as mentors) in the Portland area. Intended for both foster families and their children, we want to provide a quick, easy to use hub for local resources. These resources are easy for users to manually input and update, which ensures that they are always relevant and current.  
 
 Foster Connections also gives easy and secure access to documents stored to Google Drive.
 
@@ -17,7 +15,7 @@ To run or contribute to the project, follow these instructions:
     * `npm start`
 * Go to localhost:3000 - you should see a running version of the site.
 
-Additionally, the live site can be accessed on [foster-connections.herokuapp.com](foster-connections.herokuapp.com).
+Additionally, the live site can be accessed on [foster-connections.herokuapp.com](https://foster-connections.herokuapp.com/).
 
 ## Features
 * Up to date list of resources for foster families
